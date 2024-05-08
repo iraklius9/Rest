@@ -1,11 +1,11 @@
 from django.urls import path
 
-from rest1.views import product_list, product_detail, create_product, delete_product, update_product
+from rest1.views import ProductList, ProductDetail, CreateProduct, DeleteProduct, UpdateProduct
 
 urlpatterns = [
-    path('products/', product_list),
-    path('products/<int:pk>/', product_detail),
-    path('products/create/', create_product),
-    path('products/<int:pk>/delete/', delete_product),
-    path('products/<int:pk>/update/', update_product),
+    path('products/', ProductList.as_view()),
+    path('products/<int:pk>/', ProductDetail.as_view()),
+    path('products/create/', CreateProduct.as_view()),
+    path('products/<int:pk>/delete/', DeleteProduct.as_view()),
+    path('products/<int:pk>/update/', UpdateProduct.as_view()),
 ]
