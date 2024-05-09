@@ -5,6 +5,9 @@ This project is a simple product management system built with Django.
 ### 2. Set up the database: python manage.py migrate
 ### 3. Run the development server: python manage.py runserver
 
+## Admin Panel username is admin
+## Admin Panel password is admin123
+
 ## Usage
 
 - Access the Django admin interface to manage products and categories: [Admin Interface](http://localhost:8000/admin/) (login required)
